@@ -1,0 +1,332 @@
+{% extends 'base.html' %} <!--Наследуем от файла base.html-->
+
+{% block title %} <!-- Обявляем что будет подставляться в шаблон из базе хтмл -->
+<title>Главная страница на бутстрап</title>
+{% endblock %}
+
+{% block bodyshapka %}
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-xxl">
+                    <a class="navbar-brand" href="#">
+                        <img src="/static/img/logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                        FireSociate
+                    </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Instagram</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Telegram</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">YouTube</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Вконтакте</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">TikTok</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Другие соц.сети
+                                        </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">ClubHouse</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="#">Яндекс.Дзен</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="#">Одноклассники</a></li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                                        <button type="button" class="btn btn-secondary">Зарегистрироваться</button>
+                                        <button type="button" class="btn btn-primary">Войти в личный кабинет</button>
+                            </div>
+              </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container-xxl">
+            <div class="row align-items-center">
+                <div class="col-8">
+                    <h1>Продвижение в Instagram</h1>
+                    <p>Только Качественные подписчики с Гарантией до 180 дней Круглосуточная тех.поддержка в телеграм Без БОТОВ, Без СПИСАНИЙ Выводим в ТОП (Оставьте заявку)  Более 185.000 выполненных заказов</p>
+                    <button type="button" class="btn btn-primary btn-lg">Начать продвижение</button>
+                </div>
+                <div class="col-4">
+                    <img class="w-100" src="/static/img/previe.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section3>
+
+
+<div>
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col">
+                <h1 align="center">Стандартные подписчики</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Конец Контейнер XXL-->
+<div class="container-xxl">
+    <div class="row justify-content-around">
+        <!--Общий кол на все карты-->
+        <div class="col">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Стандартные</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Премиум</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Просмотры</button>
+                      </li>
+                  </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <!--1 Вкладки с табличками-->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                        <!--Выравнивание джастифи на все карточки-->
+                        <div class="row justify-content-between">
+
+                            <!-- Расположение всех карточек-->
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                                    <!--Первая карточка-->
+                                    <div class="col">
+                                        <div class="card">
+                                          <div class="product-1 align-items-center p-2 text-center">
+                                              <img src="/static/img/follow.svg" alt="" class="rounded" width="160">
+                                              <h5>ПОДПИСЧИКИ</h5>
+                                              <!--Инфо карты-->
+                                              <div class="mt3 info">
+                                                  <div class="star d-flex align-items-start flex-column bd-highlight mb-3">
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Высокое качество</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> 50% из России</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> С аватарками</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Безопасно: без блокировок</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Могут проявлять активность</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Мгновенный запуск заказа</span></li>
+                                                  </div>
+                                                   <div class="cost mt-3 text-dark">
+                                                        <span>0.75₽</span>
+                                                   </div>
+                                              </div>
+                                              <!--Конец информации по карте-->
+                                              <!--Кнопка для карточки-->
+                                              <div class="p-3 shoe text-center text-white mt-3 cursor">
+                                                  <button type="button" class="btn btn-primary superset" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                                                  Заказать
+                                                   </button>
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                        <!-- Конец Первая карточка-->
+
+
+                                        <!--Вторая карточка-->
+                                    <div class="col">
+                                        <div class="card">
+                                          <div class="product-1 align-items-center p-2 text-center">
+                                              <img src="/static/img/follow.svg" alt="" class="rounded" width="160">
+                                              <h5>ПОДПИСЧИКИ</h5>
+                                              <!--Инфо карты-->
+                                              <div class="mt3 info">
+                                                  <div class="star d-flex align-items-start flex-column bd-highlight mb-3">
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Высокое качество</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> 50% из России</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> С аватарками</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Безопасно: без блокировок</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Могут проявлять активность</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Мгновенный запуск заказа</span></li>
+                                                  </div>
+                                                   <div class="cost mt-3 text-dark">
+                                                        <span>0.75₽</span>
+                                                   </div>
+                                              </div>
+                                              <!--Конец информации по карте-->
+                                              <!--Кнопка для карточки-->
+                                              <div class="p-3 shoe text-center text-white mt-3 cursor">
+                                                  <button type="button" class="btn btn-primary superset" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                                                  Заказать
+                                                   </button>
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                        <!-- Конец Второй карточка-->
+
+
+                                     <!--Третья карточка-->
+                                    <div class="col">
+                                        <div class="card">
+                                          <div class="product-1 align-items-center p-2 text-center">
+                                              <img src="/static/img/follow.svg" alt="" class="rounded" width="160">
+                                              <h5>ПОДПИСЧИКИ</h5>
+                                              <!--Инфо карты-->
+                                              <div class="mt3 info">
+                                                  <div class="star d-flex align-items-start flex-column bd-highlight mb-3">
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Высокое качество</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> 50% из России</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> С аватарками</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Безопасно: без блокировок</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Могут проявлять активность</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Мгновенный запуск заказа</span></li>
+                                                  </div>
+                                                   <div class="cost mt-3 text-dark">
+                                                        <span>0.75₽</span>
+                                                   </div>
+                                              </div>
+                                              <!--Конец информации по карте-->
+                                              <!--Кнопка для карточки-->
+                                              <div class="p-3 shoe text-center text-white mt-3 cursor">
+                                                  <button type="button" class="btn btn-primary superset" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                                                  Заказать
+                                                   </button>
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                        <!-- Конец третья карточка-->
+
+
+                                    <!--Четвертая карточка-->
+                                    <div class="col">
+                                        <div class="card">
+                                          <div class="product-1 align-items-center p-2 text-center">
+                                              <img src="/static/img/follow.svg" alt="" class="rounded" width="160">
+                                              <h5>ПОДПИСЧИКИ</h5>
+                                              <!--Инфо карты-->
+                                              <div class="mt3 info">
+                                                  <div class="star d-flex align-items-start flex-column bd-highlight mb-3">
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Высокое качество</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> 50% из России</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> С аватарками</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Безопасно: без блокировок</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Могут проявлять активность</span></li>
+                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Мгновенный запуск заказа</span></li>
+                                                  </div>
+                                                   <div class="cost mt-3 text-dark">
+                                                        <span>0.75₽</span>
+                                                   </div>
+                                              </div>
+                                              <!--Конец информации по карте-->
+                                              <!--Кнопка для карточки-->
+                                              <div class="p-3 shoe text-center text-white mt-3 cursor">
+                                                  <button type="button" class="btn btn-primary superset" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                                                  Заказать
+                                                   </button>
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                        <!-- Конец Четвертая карточка-->
+
+
+                                </div>
+                            <!--Конец Выравнивание джастифи на все карточки-->
+                            </div>
+
+                        <!--Конец 1 Вкладки с табличками-->
+                        </div>
+
+
+
+                    <!--2 Вкладка с табличками-->
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div><!--Конец Вкладки с табличками-->
+
+                    <!--3 Вкладка с табличками-->
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div><!--Конец Вкладки с табличками-->
+<!--Все названия таюличек таблички-->
+</div>
+
+                    <!--Контейнер на все вкладки с картами-->
+                </div>
+
+        <!--Общий кол на все карты-->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<!--Конец Контейнер XXL-->
+</div>
+
+
+</section3>
+
+    <section4>
+
+    </section4>
+    <section5>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Инстаграм СТАНДАРТ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="col">
+
+
+                                <label for="basic-url" class="form-label">Введите ссылку или имя вашего аккаунта</label>
+                                    <div class="input-group mb-3">
+                                      <span class="input-group-text" id="basic-addon1"><a href="#" data-bs-toggle="tooltip" title="Привет Артём тут нужно будет разобраться со стилями чтобы красиво было!"><i class="bi bi-info"></i></a></span>
+                                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+
+                                     </div>
+                                <label for="basic-url" class="form-label" >Введите количество:</label>
+                                    <div class="input-group mb-3">
+                                      <input type="text" class="form-control" placeholder="Например 100" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    </div>
+
+                                    <label for="basic-url" class="form-label">Итого:</label>
+
+                            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Оплатить</button>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+    </section5>
+{% endblock %}

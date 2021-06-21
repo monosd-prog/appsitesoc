@@ -1,0 +1,363 @@
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+body{
+font-family: 'Ubuntu', sans-serif;
+    background-color: white;
+}
+
+/*Универсальный стиль для всех карт*/
+.container-xxl{
+    margin-top: 10px !important;
+}
+.card{
+    border-radius: 20px;
+    /*transition: transform.3s;*/
+}
+
+/*.card:hover{
+    transform: translateY(-15px);
+    transition: transform.3s;
+}*/
+.text1{
+    font-size: 15px;
+    color: #545454;
+}
+.info{
+    line-height: 17px;
+}
+/*Иконки Галочки*/
+.star{
+    font-size: 15px;
+    color: #E73959;
+}
+/*Цена*/
+.cost span{
+font-size: 20px;
+    font-weight: bold;
+}
+.input-group span{
+   font-size: 20px;
+    font-weight: bold;
+}
+/*Класс кнопки заказать*/
+.superset{
+       background: #E73959;
+    font-weight: bold;
+    font-size: 20px;
+        border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+/*.shoe{
+    background: #E73959;
+    font-weight: bold;
+    font-size: 20px;
+}*/
+
+/*Style*/
+.shoe:hover{
+        transform: translateY(-7px);
+    transition: transform.3s;
+    opacity: .8;
+}
+.cursor{
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.form-control{
+    width: 100%;
+}
+
+.navbar {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.card-img-top{
+    width: 100px;
+}
+.card{
+    align-items: center;
+}
+
+.d-flex>li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+.header {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto; /*Контент по центру*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between; /* от края до края контент*/
+    align-items: center;/* контент по центру от верха к низу*/
+    box-sizing: border-box;/*чтобы работали отступы по 15 пикселей*/
+    font-weight: 700;
+}
+.wrap{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto; /*Контент по центру*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+.nav {
+    list-style-type: none;/*Удаление буллетов из хедера тое есть джастифи контент*/
+    display: flex;
+    justify-content: flex-start;/*Элементы в ряд*/
+    font-size: 14px;
+    align-items: center;
+}
+.nav>li {
+    margin-left: 15px;
+
+}
+.nav>li>a{
+    text-decoration: none;
+    color: #545454;
+
+}
+.nav_btn{
+    background-color: #E73959;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #ffffff;
+    border: none;/*Убираем системные стили*/
+    font-weight: 700;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;/*Убираем подчеркивающую линию*/
+}
+.logo_img{
+    display: block;/*Отобразить изображение*/
+    width: 48px;
+    height: 48px;
+    background-image: url("/static/img/logo.svg");
+    margin-right: 20px;/*отступ вправо в пикселях*/
+}
+.logo_text{
+    font-size: 24px;
+    color: #E73959;
+}
+.button{
+    background-color: #E73959;
+    border-radius: 10px;
+    padding: 10px 45px;
+    color: #ffffff;
+    border: none;/*Убираем системные стили*/
+    font-weight: 700;
+    font-size: 24px;
+
+}
+.title-main{
+    font-size: 57px;
+    color: #545454;
+    font-weight: bold;
+}
+.text-main{
+    font-size: 32px;
+    line-height: 1.5;
+    color: #545454;
+    font-weight: 300;
+
+}
+.quality{
+    display: grid;
+    grid-template: 50% 50% / 50% 50%
+}
+.quality h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+.quality p{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #545454;
+}
+.quality button{
+    text-decoration: none;
+    border: none;
+}
+
+
+.page{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.page-top{
+    border-top: 1px solid #545454;
+    box-sizing: border-box;
+}
+.page h2{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: white;
+    padding: 5px 15px;
+    top: -24px;
+    color: #545454;
+}
+.popup_btn{
+        display: flex;
+    align-items: center;
+    text-decoration: none;/*Убираем подчеркивающую линию*/
+}
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup_body{
+
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup_close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.popup_content{
+    background-color: white;
+    color: black;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+
+}
+.popup_text{
+    font-weight: 400;
+}
+.popup_title{
+    font-size: 40px;
+    margin: 0px 0px 1em 0px;
+    color: #545454;
+    font-weight: 700;
+
+}
+.decor {
+   position: relative;
+   max-width: 400px;
+   margin: 50px auto 0;
+   background: white;
+   border-radius: 30px;
+}
+.form-left-decoration, .form-right-decoration {
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 20px;
+   background: #f69a73;
+   border-radius: 20px;
+}
+.form-left-decoration {
+   bottom: 60px;
+   left: -30px;
+}
+.form-right-decoration {
+   top: 60px;
+   right: -30px;
+}
+.form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 20px;
+   border-radius: 30px;
+   background: white;
+}
+.form-left-decoration:before {
+   top: -20px;
+}
+.form-left-decoration:after {
+   top: 20px;
+   left: 10px;
+}
+.form-right-decoration:before {
+   top: -20px;
+   right: 0;
+}
+.form-right-decoration:after {
+   top: 20px;
+   right: 10px;
+}
+.circle {
+   position: absolute;
+   bottom: 80px;
+   left: -55px;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: white;
+}
+.form-inner {
+   padding: 50px;
+}
+.form-inner input, .form-inner textarea {
+   display: block;
+   width: 100%;
+   padding: 0 20px;
+   margin-bottom: 10px;
+   background: #E9EFF6;
+   line-height: 40px;
+   border-width: 0;
+   border-radius: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+   margin-top: 30px;
+   background: #f69a73;
+   border-bottom: 4px solid #d87d56;
+   color: white;
+   font-size: 14px;
+}
+.form-inner textarea {
+   resize: none;
+}
+.form-inner h3 {
+   margin-top: 0;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   font-size: 24px;
+   color: #707981;
+}

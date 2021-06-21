@@ -12,6 +12,9 @@ def index():
 def about():
     return render_template('about.html')  # Путь который будет показывать что будет выводиться на главной странице
 
+@app.route('/testabout')
+def testabout():
+    return render_template('testabout.html')  # Путь который будет показывать что будет выводиться на главной странице
 
 if __name__ == '__main__':
     app.run(debug=True)  # После разработке заменить на false
