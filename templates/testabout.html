@@ -7,7 +7,184 @@
 {% block bodyshapka %}
 
 
-    <header>
+<header>
+    <!--Шапка сайта-->
+    <div class="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 d-flex align-items-center justify-content-end">
+                    <img src="/static/img/logo.svg" alt="Logotipe" class="logo">
+                </div>
+                <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
+                    <a class="navbar-brand" href="#">FireSoc</a>
+                    <p align="center">Зажги соц.сети вместе с<br>нами</p>
+
+
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <ul class="nav d-flex justify-content-center">
+                        <li class="nav-item">
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Telegram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">TikTok</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Другие</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offset-md-1 col-md-2 d-flex justify-content-center">
+                    <!--MS-AUTO прижимает вправо по flex  в бутстрап-->
+                    <button class="vhod ms-auto"><img src="/static/img/vhod.svg" alt="Vhod"> Войти </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Конец Шапка сайта-->
+
+    <!--Первый экран с Оффером-->
+
+    <div class="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="offer-cont">
+                        <h1 class="offer-cont-title">
+                            Продвижение в Instagram!Выводим в ТОП и Рекомендации!
+                        </h1>
+                        <p class="offer-cont-text">
+                            Живые подписчики, лайки и другие услуги для вашей <br> страницы Instagram.<br> Комплексное продвижение страниц.<br> Эффективный способ повысить популярность аккаунта.
+                        </p>
+                        <button class="offer-cont-btn btnn">
+                            Начать продвижение
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="hero">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Конец первого экрана с оффером-->
+</header>
+    <!--Конец ХЕдера-->
+<!--Начало секции преимуществ-->
+<section class="preimushestva">
+    <!--Текст Преимуществ-->
+    <div class="text-preimush">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center zaglavie-peimush">
+                    <h3>Почему именно мы</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Карточки-->
+    <div class="carty-preimush">
+        <div class="container">
+            <div class="row">
+                <!-- 1 Первая карточка-->
+                <div class="offset-md-1 col-md-3 d-flex justify-content-center">
+                    <div class="card text-center" style="width: 18rem;">
+                      <div class="card-body">
+                          <img src="/static/img/preimush1.png" alt="Гарантия на подписчиков">
+                        <p class="preimush-cont-text preim-1" >Гарантия 180 дней</p>
+
+                      </div>
+                    </div>
+                </div>
+                <!-- 1 Конец Первая карточка-->
+
+                <!-- 2 Вторая карточка-->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card text-center" style="width: 18rem;">
+                      <div class="card-body">
+                        <img src="/static/img/preimush2.png" alt="Гарантия на подписчиков">
+                        <p class="preimush-cont-text preim-1" >Без Ботов<br>Без Списаний</p>
+
+                      </div>
+                    </div>
+                </div>
+                <!-- 2 Конец Вторая карточка-->
+
+                <!-- 3 Третья карточка-->
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card text-center" style="width: 18rem;">
+                      <div class="card-body">
+                        <img src="/static/img/preimush3.png" alt="Гарантия на подписчиков">
+                        <p class="preimush-cont-text preim-1">Круглосуточная<br>тех. поддержка</p>
+
+                      </div>
+                    </div>
+                </div>
+                <!-- 3 Конец Третья карточка-->
+            </div>
+        </div>
+    </div>
+    <!--Текст Услуги-->
+    <div class="text-uslugi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center zaglavie-peimush">
+                    <h3>Услуги</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Услуги ТАбс-->
+    <div class="uslugi-tabs">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <ul class="nav nav-pills mb-3 tabs-custom d-flex justify-content-center " id="pills-tab" role="tablist">
+                  <li class="nav-item " role="presentation">
+                    <button class="nav-link active tabs-button" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Подписчики</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link tabs-button" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Лайки</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Просмотры видео</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Комментарии</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Просмотры историй</button>
+                  </li>
+                  <li class="nav-item top1" role="presentation" >
+                    <button class="nav-link tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Вывод в ТОП</button>
+                  </li>
+                </ul>
+                <!--Контент Услуг-->
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                  </div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Хедер убрал для лучшего понимания
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-xxl">
                     <a class="navbar-brand" href="#">
@@ -56,8 +233,8 @@
                                         <button type="button" class="btn btn-primary">Войти в личный кабинет</button>
                             </div>
               </div>
-        </nav>
-    </header>
+        </nav> Хедер -->
+
     <section>
         <div class="container-xxl">
             <div class="row align-items-center">

@@ -5,37 +5,194 @@ section{
 
 
 body{
-font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background-color: white;
 }
 
-/*Универсальный стиль для всех карт*/
-.container-xxl{
+
+button{
+    display: block;
+    background: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+/*Общий класс кнопок с градиентом*/
+.btnn{
+color: white;
+
+}
+
+.navigation{
+    padding-top: 40px;
+    margin-bottom: 135px;
+}
+.text-preimush{
+    padding-top: 60px;
+    padding-bottom: 48px;
+}
+.text-uslugi{
+    padding-top: 90px;
+    padding-bottom: 37px;
+}
+.vhod{
+    background: transparent;
+    border: none;
+}
+.offer-cont h1{
+  background: linear-gradient(90deg, #E73959 0%, #EC8A4F 98.47%, #F1D746 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.zaglavie-peimush h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px;
+
+    /* Заголовки */
+    color: #363636;
+}
+
+
+.offer-cont-title{
+    font-size: 48px;
+    line-height: 1.3em;
+}
+
+.offer-cont-text{
+    margin: 14px 0 26px;
+    font-size: 18px;
+    color: #545454;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.preimush-cont-text{
+    margin: 14px 0 26px;
+    font-size: 24px;
+    color: #545454;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.preim-1{
+    position: relative;
+    top: 10%;
+    border-top: 1px solid rgba(84, 84, 84, 0.2);
+
+}
+
+
+.offer-cont-btn{
+    background: linear-gradient(90deg, #E73959 0%, #ED974E 78.8%, #EFB24B 89.81%, #F1D746 100%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 25px 30px;
+    border: none;
+    display: inline;
+    border-radius: 7px;
+    transform: rotate(-4.01deg);
+    letter-spacing: 0.1em;
+    text-align: center;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease;
+}
+.hero{
+    position: absolute;
+    background-image: url("/static/img/hero.png");
+    background-size: 100% 100%;
+    width: 801px;
+    height: 580px;
+    margin-top: -70px;
+    margin-left: -180px;
+    transform: rotate(-4.77deg);
+}
+.offer-cont-btn:hover{
+    transform: translateY(5px);
+}
+
+.card{
+    border-radius: 22px;
+    border: 1px solid rgba(84, 84, 84, 0.1);
+    box-sizing: border-box;
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.36));
+}
+
+/*CSS для Меню табс*/
+.tabs-custom{
+    border: 1px solid rgba(84, 84, 84, 0.1);
+    box-sizing: border-box;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.33);
+    border-radius: 25px;
+}
+.tabs-button{
+    width: 219px;
+    height: 59px;
+    left: 230px;
+    top: 1141px;
+
+    background: linear-gradient(90deg, #E73959 0%, #EC894F 75.09%, #F1D746 100%);
+    border-radius: 25px;
+}
+top1{
+    margin-left: 450px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    width: 219px;
+    height: 59px;
+    left: 230px;
+    top: 1141px;
+    color: white;
+    background: linear-gradient(90deg, #E73959 0%, #EC894F 75.09%, #F1D746 100%);
+    border-radius: 25px;
+}
+.nav-link{
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 38px;
+/* identical to box height */
+
+
+color: #545454;
+}
+.mb-3{
+    margin-right: -400px;
+}
+.tabs-button:hover{
+    color: #EC8A4F;
+}
+/*Универсальный стиль для всех карт К первому дизайну*/
+/*.container-xxl{
     margin-top: 10px !important;
 }
-.card{
+/*.card{
     border-radius: 20px;
     /*transition: transform.3s;*/
-}
+/*}
 
 /*.card:hover{
     transform: translateY(-15px);
     transition: transform.3s;
 }*/
-.text1{
+/*.text1{
     font-size: 15px;
     color: #545454;
-}
+/*}
 .info{
     line-height: 17px;
 }
-/*Иконки Галочки*/
+/*Иконки Галочки*//*
 .star{
     font-size: 15px;
     color: #E73959;
 }
 /*Цена*/
-.cost span{
+/*.cost span{
 font-size: 20px;
     font-weight: bold;
 }
@@ -44,7 +201,7 @@ font-size: 20px;
     font-weight: bold;
 }
 /*Класс кнопки заказать*/
-.superset{
+/*.superset{
        background: #E73959;
     font-weight: bold;
     font-size: 20px;
@@ -64,6 +221,7 @@ font-size: 20px;
 }*/
 
 /*Style*/
+/*
 .shoe:hover{
         transform: translateY(-7px);
     transition: transform.3s;
@@ -96,37 +254,37 @@ font-size: 20px;
 
 .d-flex>li {
   list-style-type: none;
-  /* Убираем маркеры */
-}
-
+  /* Убираем маркеры
+}*/
+/*
 .header {
     width: 100%;
     max-width: 1180px;
-    margin: 0 auto; /*Контент по центру*/
+    margin: 0 auto; /*Контент по центру
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 30px;
     display: flex;
-    justify-content: space-between; /* от края до края контент*/
-    align-items: center;/* контент по центру от верха к низу*/
-    box-sizing: border-box;/*чтобы работали отступы по 15 пикселей*/
+    justify-content: space-between; /* от края до края контент
+    align-items: center;/* контент по центру от верха к низу
+    box-sizing: border-box;/*чтобы работали отступы по 15 пикселей
     font-weight: 700;
 }
 .wrap{
     width: 100%;
     max-width: 1180px;
-    margin: 0 auto; /*Контент по центру*/
+    margin: 0 auto; /*Контент по центру
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 50px;
 }
 .nav {
-    list-style-type: none;/*Удаление буллетов из хедера тое есть джастифи контент*/
+    list-style-type: none;/*Удаление буллетов из хедера тое есть джастифи контент
     display: flex;
-    justify-content: flex-start;/*Элементы в ряд*/
+    justify-content: flex-start;/*Элементы в ряд
     font-size: 14px;
     align-items: center;
-}
+}*//*
 .nav>li {
     margin-left: 15px;
 
@@ -142,19 +300,19 @@ font-size: 20px;
     padding: 10px 15px;
     color: #ffffff;
     border: none;/*Убираем системные стили*/
-    font-weight: 700;
+   /* font-weight: 700;*//*
 }
 .logo{
     display: flex;
     align-items: center;
-    text-decoration: none;/*Убираем подчеркивающую линию*/
+    text-decoration: none;/*Убираем подчеркивающую линию
 }
-.logo_img{
-    display: block;/*Отобразить изображение*/
-    width: 48px;
+.logo_img{*/
+   /* display: block;/*Отобразить изображение*/
+ /*   width: 48px;
     height: 48px;
     background-image: url("/static/img/logo.svg");
-    margin-right: 20px;/*отступ вправо в пикселях*/
+    margin-right: 20px;/*отступ вправо в пикселях
 }
 .logo_text{
     font-size: 24px;
@@ -165,8 +323,8 @@ font-size: 20px;
     border-radius: 10px;
     padding: 10px 45px;
     color: #ffffff;
-    border: none;/*Убираем системные стили*/
-    font-weight: 700;
+    border: none;*//*Убираем системные стили*/
+   /* font-weight: 700;
     font-size: 24px;
 
 }
@@ -223,9 +381,9 @@ font-size: 20px;
 .popup_btn{
         display: flex;
     align-items: center;
-    text-decoration: none;/*Убираем подчеркивающую линию*/
-}
-.popup{
+    text-decoration: none;/*Убираем подчеркивающую линию
+}*//*
+/*.popup*//*{
     position: fixed;
     width: 100%;
     height: 100%;
@@ -235,8 +393,8 @@ font-size: 20px;
     opacity: 0;
     visibility: hidden;
 
-}
-.popup:target{
+}*/
+/*.popup:target{
     opacity: 1;
     visibility: visible;
 }
@@ -361,3 +519,4 @@ font-size: 20px;
    font-size: 24px;
    color: #707981;
 }
+*/
