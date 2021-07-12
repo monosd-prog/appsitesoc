@@ -15,29 +15,35 @@
                 <div class="col-md-1 d-flex align-items-center justify-content-end">
                     <img src="/static/img/logo.svg" alt="Logotipe" class="logo">
                 </div>
-                <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
-                    <a class="navbar-brand" href="#">FireSoc</a>
+                <div class="col-md-2 d-flex flex-column align-items-center justify-content-center brandit-1">
+                    <a class="navbar-brand brand2" href="#">FireSoc</a>
                     <p align="center">Зажги соц.сети вместе с<br>нами</p>
 
 
                 </div>
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-md-7 d-flex align-items-center justify-content-center">
                     <ul class="nav d-flex justify-content-center">
                         <li class="nav-item">
-                            <a href="#">Instagram</a>
+                            <a class="nav-item1" href="#">Instagram</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Telegram</a>
+                            <a class="nav-item1" href="#">Telegram</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">TikTok</a>
+                            <a class="nav-item1" href="#">TikTok</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#">Другие</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-item1 dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Другие</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Одноклассники</a></li>
+                                    <li><a class="dropdown-item" href="#">YouTube</a></li>
+
+                                    <li><a class="dropdown-item" href="#">OnlyFans</a></li>
+                                </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="offset-md-1 col-md-2 d-flex justify-content-center">
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
                     <!--MS-AUTO прижимает вправо по flex  в бутстрап-->
                     <button class="vhod ms-auto"><img src="/static/img/vhod.svg" alt="Vhod"> Войти </button>
                 </div>
@@ -59,9 +65,9 @@
                         <p class="offer-cont-text">
                             Живые подписчики, лайки и другие услуги для вашей <br> страницы Instagram.<br> Комплексное продвижение страниц.<br> Эффективный способ повысить популярность аккаунта.
                         </p>
-                        <button class="offer-cont-btn btnn">
+                        <a  class="offer-cont-btn btnn wocb-button" href="#scrollspyHeading1" type="submit" data-test-id="button">
                             Начать продвижение
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -75,6 +81,7 @@
     <!--Конец первого экрана с оффером-->
 </header>
     <!--Конец ХЕдера-->
+
 <!--Начало секции преимуществ-->
 <section class="preimushestva">
     <!--Текст Преимуществ-->
@@ -87,28 +94,33 @@
             </div>
         </div>
     </div>
-    <!--Карточки-->
+    <!--Карточки Преимуществ-->
     <div class="carty-preimush">
-        <div class="container">
-            <div class="row">
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
                 <!-- 1 Первая карточка-->
-                <div class="offset-md-1 col-md-3 d-flex justify-content-center">
-                    <div class="card text-center" style="width: 18rem;">
-                      <div class="card-body">
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card text-center " style="width: 18rem;">
+                      <div class="card-body ">
                           <img src="/static/img/preimush1.png" alt="Гарантия на подписчиков">
                         <p class="preimush-cont-text preim-1" >Гарантия 180 дней</p>
-
+                            <div class="flipin">
+                                <p class="flipin-text">В подарок к каждому заказу идёт Автоматическое восстановление если будет даже 1 отписка </p>
+                            </div>
                       </div>
                     </div>
                 </div>
                 <!-- 1 Конец Первая карточка-->
 
                 <!-- 2 Вторая карточка-->
-                <div class="col-md-4 d-flex justify-content-center">
+                <div class="col-md-3 col-lg-3 d-flex justify-content-center">
                     <div class="card text-center" style="width: 18rem;">
                       <div class="card-body">
                         <img src="/static/img/preimush2.png" alt="Гарантия на подписчиков">
                         <p class="preimush-cont-text preim-1" >Без Ботов<br>Без Списаний</p>
+                          <div class="flipin">
+                                <p class="flipin-text">В пакетах СТАНДАРТ и ПРЕМИУМ ипользуем в работе только качественных подписчиков, что позволяет избежать списаний</p>
+                            </div>
 
                       </div>
                     </div>
@@ -121,6 +133,9 @@
                       <div class="card-body">
                         <img src="/static/img/preimush3.png" alt="Гарантия на подписчиков">
                         <p class="preimush-cont-text preim-1">Круглосуточная<br>тех. поддержка</p>
+                          <div class="flipin">
+                                <p class="flipin-text">Работаем 24/7<br> Отвечаем на вопросы клиентов быстрее чем молния</p>
+                            </div>
 
                       </div>
                     </div>
@@ -129,381 +144,1361 @@
             </div>
         </div>
     </div>
-    <!--Текст Услуги-->
+    <!--Конец Карточки Преимуществ-->
+    <!--БЛОК 3 - Текст Услуги-->
     <div class="text-uslugi">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 d-flex justify-content-center zaglavie-peimush">
-                    <h3>Услуги</h3>
+                    <h3 id="scrollspyHeading1">Услуги</h3>
                 </div>
             </div>
         </div>
     </div>
-    <!--Услуги ТАбс-->
+    <!--Услуги Кнопки которые ведут на раскрывающиеся окошки-->
     <div class="uslugi-tabs">
         <div class="container d-flex justify-content-center">
             <div class="row">
                 <ul class="nav nav-pills mb-3 tabs-custom d-flex justify-content-center " id="pills-tab" role="tablist">
                   <li class="nav-item " role="presentation">
-                    <button class="nav-link active tabs-button" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Подписчики</button>
+                    <button class="nav-link active tabs-button" id="pills-podpiski-tab" data-bs-toggle="pill" data-bs-target="#pills-podpiski" type="button" role="tab" aria-controls="pills-podpiski" aria-selected="true">Подписчики</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link tabs-button" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Лайки</button>
+                    <button class="nav-link tabs-button" id="pills-like-tab" data-bs-toggle="pill" data-bs-target="#pills-like" type="button" role="tab" aria-controls="pills-like" aria-selected="false">Лайки</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Просмотры видео</button>
+                    <button class="nav-link tabs-button" id="pills-prosmotry-tab" data-bs-toggle="pill" data-bs-target="#pills-prosmotry" type="button" role="tab" aria-controls="pills-prosmotry" aria-selected="false">Просмотры видео</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Комментарии</button>
+                    <button class="nav-link tabs-button" id="pills-komments-tab" data-bs-toggle="pill" data-bs-target="#pills-komments" type="button" role="tab" aria-controls="pills-komments" aria-selected="false">Комментарии</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Просмотры историй</button>
+                    <button class="nav-link tabs-button" id="pills-history-tab" data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history" aria-selected="false">Просмотры историй</button>
                   </li>
                   <li class="nav-item top1" role="presentation" >
-                    <button class="nav-link tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Вывод в ТОП</button>
+                    <button class="nav-link tabs-button" id="pills-top-tab" data-bs-toggle="pill" data-bs-target="#pills-top" type="button" role="tab" aria-controls="pills-top" aria-selected="false">Вывод в ТОП</button>
                   </li>
                 </ul>
-                <!--Контент Услуг-->
+                <!--Контент Услуг выпадающие менюшки -->
                 <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <!--Начало подписки развертываемое меню-->
+                    <div class="tab-pane fade show active" id="pills-podpiski" role="tabpanel" aria-labelledby="pills-podpiski-tab">
+                       <div class="container">
+                           <div class="row d-flex justify-content-around">
+                               <!--Блок Эконом-->
+                               <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                                    <div class="card card-uslugi" style="width: 18rem;">
+                                      <div class="card-body">
+                                          <div class="card-title-text">
+                                              <h5 class="card-title">ЭКОНОМ</h5>
+                                          </div>
+                                          <ul class="list-unstyled ">
 
-                  </div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                              <li class="icon-li ">
+                                                   <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <h6>Высокое качество</h6>
+                                                      </div>
+                                                    </div>
+                                              </li>
 
-                  </div>
-                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>50% из России </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
 
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>С аватарками</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                            <h6>
+                                                          Безопасно: без блокировок
+                                                            </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Могут проявлять активность</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center card-niz1">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Мгновенный запуск заказа</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                          </ul>
+<div>
+                                          <p class="card-text card-opis text-center">Подписчики для Instagram с без восстановления</p>
+
+                                          <div class="d-flex bd-highlight d-flex justify-content-between niz-chast">
+                                              <div class="p-2 flex-fill bd-highlight text-center cena ">
+                                                  <span>0.75Руб/Шт</span>
+                                              </div>
+                                              <div class="p-2 flex-fill bd-highlight">
+                                                    <button class="offer-cont-btn2 btn2" data-bs-toggle="modal" data-bs-target="#exampleModalpodpiskieconom">
+                                                        Выбрать количество
+                                                    </button>
+                                              </div>
+                                          </div>
+</div>
+                                      </div>
+                                    </div>
+                               </div>
+
+                               <!--Конец Блок Эконом-->
+
+
+
+                               <!--Блок Премиум-->
+                               <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                                    <div class="card card-uslugi" style="width: 18rem;">
+                                      <div class="card-body">
+                                          <div class="card-title-text">
+                                              <h5 class="card-title">ПРЕМИУМ</h5>
+                                          </div>
+                                          <ul class="list-unstyled ">
+
+                                              <li class="icon-li ">
+                                                   <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <h6>Премиальное качество</h6>
+                                                      </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>80% из России, 20% из СНГ </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>С аватарками и публикациями</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                            <h6>
+                                                          Безопасно: без блокировок
+                                                            </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Могут проявлять активность</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Мгновенный запуск заказа</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                          </ul>
+
+                                          <p class="card-text card-opis text-center ">Подписчики для Instagram с автовосстановлением 180 дней</p>
+
+                                          <div class="d-flex bd-highlight d-flex justify-content-center niz-chast">
+                                              <div class="p-2 flex-fill bd-highlight text-center cena ">
+                                                  <span>2.75Руб/Шт</span>
+                                              </div>
+                                              <div class="p-2 flex-fill bd-highlight">
+                                                    <button class="offer-cont-btn2 btn2" data-bs-toggle="modal" data-bs-target="#exampleModalpodpiskipremium">
+                                                        Выбрать количество
+                                                    </button>
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+                               </div>
+                               <!--Конец Блока Премиум-->
+
+
+                               <!--Начало Блок Стандарт-->
+                               <div class="col-md-12 col-lg-4 d-flex justify-content-center otstup-md">
+                                    <div class="card card-uslugi" style="width: 18rem;">
+                                      <div class="card-body">
+                                          <div class="card-title-text">
+                                              <h5 class="card-title">СТАНДАРТ</h5>
+                                          </div>
+                                          <ul class="list-unstyled ">
+
+                                              <li class="icon-li ">
+                                                   <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <h6>Высокое качество</h6>
+                                                      </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>70% из России </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>С аватарками и публикациями</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                            <h6>
+                                                          Безопасно: без блокировок
+                                                            </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Могут проявлять активность</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center card-niz3">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Мгновенный запуск заказа</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                          </ul>
+
+                                          <p class="card-text card-opis text-center">Подписчики для Instagram с автовосстановлением 90 дней</p>
+
+                                          <div class="d-flex bd-highlight d-flex justify-content-center niz-chast">
+                                              <div class="p-2 flex-fill bd-highlight text-center cena">
+                                                  <span>1.75Руб/Шт</span>
+                                              </div>
+                                              <div class="p-2 flex-fill bd-highlight">
+                                                    <button class="offer-cont-btn2 btn2" data-bs-toggle="modal" data-bs-target="#exampleModalpodpiskistandart">
+                                                        Выбрать количество
+                                                    </button>
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+                               </div>
+                                <!--Конец Блок Стандарт-->
+
+
+
+
+
+                           </div>
+                       </div>
                   </div>
+                    <!--Конец подписки развертываемое меню-->
+                    <!--Начало ЛАЙКИ развертываемое меню-->
+                    <div class="tab-pane fade" id="pills-like" role="tabpanel" aria-labelledby="pills-like-tab">
+                      <div class="container">
+                           <div class="row d-flex justify-content-around">
+                               <!--Блок Эконом-->
+                               <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                                    <div class="card card-uslugi" style="width: 18rem;">
+                                      <div class="card-body">
+                                          <div class="card-title-text">
+                                              <h5 class="card-title">ЛАЙКИ-Эконом</h5>
+                                          </div>
+                                          <ul class="list-unstyled ">
+
+                                              <li class="icon-li ">
+                                                   <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <h6>Высокое качество</h6>
+                                                      </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>50% из России </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>С аватарками</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                            <h6>
+                                                          Безопасно: без блокировок
+                                                            </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Могут проявлять активность</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center card-niz1">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Мгновенный запуск заказа</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                          </ul>
+<div>
+                                          <p class="card-text card-opis text-center">Подписчики для Instagram с без восстановления</p>
+
+                                          <div class="d-flex bd-highlight d-flex justify-content-between niz-chast">
+                                              <div class="p-2 flex-fill bd-highlight text-center cena ">
+                                                  <span>0.75Руб/Шт</span>
+                                              </div>
+                                              <div class="p-2 flex-fill bd-highlight">
+                                                    <button class="offer-cont-btn2 btn2">
+                                                        Выбрать количество
+                                                    </button>
+                                              </div>
+                                          </div>
+</div>
+                                      </div>
+                                    </div>
+                               </div>
+
+                               <!--Конец Блок Эконом-->
+
+
+
+                               <!--Блок Премиум-->
+                               <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                                    <div class="card card-uslugi" style="width: 18rem;">
+                                      <div class="card-body">
+                                          <div class="card-title-text">
+                                              <h5 class="card-title">ПРЕМИУМ</h5>
+                                          </div>
+                                          <ul class="list-unstyled ">
+
+                                              <li class="icon-li ">
+                                                   <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <h6>Премиальное качество</h6>
+                                                      </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>80% из России, 20% из СНГ </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>С аватарками и публикациями</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                            <h6>
+                                                          Безопасно: без блокировок
+                                                            </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Могут проявлять активность</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Мгновенный запуск заказа</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                          </ul>
+
+                                          <p class="card-text card-opis text-center ">Подписчики для Instagram с автовосстановлением 180 дней</p>
+
+                                          <div class="d-flex bd-highlight d-flex justify-content-center niz-chast">
+                                              <div class="p-2 flex-fill bd-highlight text-center cena ">
+                                                  <span>2.75Руб/Шт</span>
+                                              </div>
+                                              <div class="p-2 flex-fill bd-highlight">
+                                                    <button class="offer-cont-btn2 btn2">
+                                                        Выбрать количество
+                                                    </button>
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+                               </div>
+                               <!--Конец Блока Премиум-->
+
+
+                               <!--Начало Блок Стандарт-->
+                               <div class="col-md-12 col-lg-4 d-flex justify-content-center otstup-md">
+                                    <div class="card card-uslugi" style="width: 18rem;">
+                                      <div class="card-body">
+                                          <div class="card-title-text">
+                                              <h5 class="card-title">СТАНДАРТ</h5>
+                                          </div>
+                                          <ul class="list-unstyled ">
+
+                                              <li class="icon-li ">
+                                                   <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <h6>Высокое качество</h6>
+                                                      </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>70% из России </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>С аватарками и публикациями</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                            <h6>
+                                                          Безопасно: без блокировок
+                                                            </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Могут проявлять активность</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center card-niz3">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Мгновенный запуск заказа</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                          </ul>
+
+                                          <p class="card-text card-opis text-center">Подписчики для Instagram с автовосстановлением 90 дней</p>
+
+                                          <div class="d-flex bd-highlight d-flex justify-content-center niz-chast">
+                                              <div class="p-2 flex-fill bd-highlight text-center cena">
+                                                  <span>1.75Руб/Шт</span>
+                                              </div>
+                                              <div class="p-2 flex-fill bd-highlight">
+                                                    <button class="offer-cont-btn2 btn2">
+                                                        Выбрать количество
+                                                    </button>
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+                               </div>
+                                <!--Конец Блок Стандарт-->
+
+
+
+
+
+                           </div>
+                       </div>
+                  </div>
+                    <!--Конец ЛАЙКИ развертываемое меню-->
+                    <!--Начало ПРОСМОТРЫ развертываемое меню-->
+                    <div class="tab-pane fade" id="pills-prosmotry" role="tabpanel" aria-labelledby="pills-prosmotry-tab">
+                      <div class="container">
+                           <div class="row d-flex justify-content-around">
+                               <!--Блок Эконом-->
+                               <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                                    <div class="card card-uslugi" style="width: 18rem;">
+                                      <div class="card-body">
+                                          <div class="card-title-text">
+                                              <h5 class="card-title">ПРОСМОТРЫ-Эконом</h5>
+                                          </div>
+                                          <ul class="list-unstyled ">
+
+                                              <li class="icon-li ">
+                                                   <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <h6>Высокое качество</h6>
+                                                      </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>50% из России </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>С аватарками</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                            <h6>
+                                                          Безопасно: без блокировок
+                                                            </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Могут проявлять активность</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center card-niz1">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Мгновенный запуск заказа</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                          </ul>
+<div>
+                                          <p class="card-text card-opis text-center">Подписчики для Instagram с без восстановления</p>
+
+                                          <div class="d-flex bd-highlight d-flex justify-content-between niz-chast">
+                                              <div class="p-2 flex-fill bd-highlight text-center cena ">
+                                                  <span>0.75Руб/Шт</span>
+                                              </div>
+                                              <div class="p-2 flex-fill bd-highlight">
+                                                    <button class="offer-cont-btn2 btn2">
+                                                        Выбрать количество
+                                                    </button>
+                                              </div>
+                                          </div>
+</div>
+                                      </div>
+                                    </div>
+                               </div>
+
+                               <!--Конец Блок Эконом-->
+
+
+
+                               <!--Блок Премиум-->
+                               <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                                    <div class="card card-uslugi" style="width: 18rem;">
+                                      <div class="card-body">
+                                          <div class="card-title-text">
+                                              <h5 class="card-title">ПРЕМИУМ</h5>
+                                          </div>
+                                          <ul class="list-unstyled ">
+
+                                              <li class="icon-li ">
+                                                   <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <h6>Премиальное качество</h6>
+                                                      </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>80% из России, 20% из СНГ </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>С аватарками и публикациями</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                            <h6>
+                                                          Безопасно: без блокировок
+                                                            </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Могут проявлять активность</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Мгновенный запуск заказа</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                          </ul>
+
+                                          <p class="card-text card-opis text-center ">Подписчики для Instagram с автовосстановлением 180 дней</p>
+
+                                          <div class="d-flex bd-highlight d-flex justify-content-center niz-chast">
+                                              <div class="p-2 flex-fill bd-highlight text-center cena ">
+                                                  <span>2.75Руб/Шт</span>
+                                              </div>
+                                              <div class="p-2 flex-fill bd-highlight">
+                                                    <button class="offer-cont-btn2 btn2">
+                                                        Выбрать количество
+                                                    </button>
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+                               </div>
+                               <!--Конец Блока Премиум-->
+
+
+                               <!--Начало Блок Стандарт-->
+                               <div class="col-md-12 col-lg-4 d-flex justify-content-center otstup-md">
+                                    <div class="card card-uslugi" style="width: 18rem;">
+                                      <div class="card-body">
+                                          <div class="card-title-text">
+                                              <h5 class="card-title">СТАНДАРТ</h5>
+                                          </div>
+                                          <ul class="list-unstyled ">
+
+                                              <li class="icon-li ">
+                                                   <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <h6>Высокое качество</h6>
+                                                      </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>70% из России </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>С аватарками и публикациями</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                            <h6>
+                                                          Безопасно: без блокировок
+                                                            </h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Могут проявлять активность</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+                                              <li class="icon-li">
+                                                  <div class="d-flex align-items-center card-niz3">
+                                                      <div class="flex-shrink-0">
+                                                        <img src="/static/img/chek-box.png" alt="...">
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                          <h6>Мгновенный запуск заказа</h6>
+                                                          </div>
+                                                    </div>
+                                              </li>
+
+                                          </ul>
+
+                                          <p class="card-text card-opis text-center">Подписчики для Instagram с автовосстановлением 90 дней</p>
+
+                                          <div class="d-flex bd-highlight d-flex justify-content-center niz-chast">
+                                              <div class="p-2 flex-fill bd-highlight text-center cena">
+                                                  <span>1.75Руб/Шт</span>
+                                              </div>
+                                              <div class="p-2 flex-fill bd-highlight">
+                                                    <button class="offer-cont-btn2 btn2">
+                                                        Выбрать количество
+                                                    </button>
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+                               </div>
+                                <!--Конец Блок Стандарт-->
+
+
+
+
+
+                           </div>
+                       </div>
+                  </div>
+                    <!--Конец ПРОСМОТРЫ развертываемое меню-->
+                    <!--Пустые Блоки чтобы были-->
+                    <div class="tab-pane fade" id="pills-komments" role="tabpanel" aria-labelledby="pills-komments-tab">
+<h1>Комменты</h1>
+                    </div>
+                    <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab">
+<h1>Просмотры историй</h1>
+                    </div>
+                    <div class="tab-pane fade" id="pills-top" role="tabpanel" aria-labelledby="pills-top-tab">
+<h1>Вывод в топ(Здесь чисто форму заявки расположить так как ценник от 150к)</h1>
+                    </div>
+                    <!--Конец Пустые Блоки чтобы были-->
                 </div>
             </div>
         </div>
     </div>
+<!--Конец услуг-->
 </section>
 
-
-
-
-
-    <!-- Хедер убрал для лучшего понимания
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="container-xxl">
-                    <a class="navbar-brand" href="#">
-                        <img src="/static/img/logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                        FireSociate
-                    </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Instagram</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Telegram</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">YouTube</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Вконтакте</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">TikTok</a>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Другие соц.сети
-                                        </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="#">ClubHouse</a></li>
-                                                <li><hr class="dropdown-divider"></li>
-                                                <li><a class="dropdown-item" href="#">Яндекс.Дзен</a></li>
-                                                <li><hr class="dropdown-divider"></li>
-                                                <li><a class="dropdown-item" href="#">Одноклассники</a></li>
-                                            </ul>
-                                    </li>
-                                </ul>
-                                        <button type="button" class="btn btn-secondary">Зарегистрироваться</button>
-                                        <button type="button" class="btn btn-primary">Войти в личный кабинет</button>
-                            </div>
-              </div>
-        </nav> Хедер -->
-
-    <section>
-        <div class="container-xxl">
-            <div class="row align-items-center">
-                <div class="col-8">
-                    <h1>Продвижение в Instagram</h1>
-                    <p>Только Качественные подписчики с Гарантией до 180 дней Круглосуточная тех.поддержка в телеграм Без БОТОВ, Без СПИСАНИЙ Выводим в ТОП (Оставьте заявку)  Более 185.000 выполненных заказов</p>
-                    <button type="button" class="btn btn-primary btn-lg">Начать продвижение</button>
+<section class="answers">
+<!--Текст Секции Частые вопросы-->
+    <div class="text-answers">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-4 col-md-4 d-flex justify-content-center ">
+                    <p class="text-ansers">Частые вопросы</p>
                 </div>
-                <div class="col-4">
-                    <img class="w-100" src="/static/img/previe.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-<section3>
-
-
-<div>
-    <div class="container-xxl">
-        <div class="row">
-            <div class="col">
-                <h1 align="center">Стандартные подписчики</h1>
             </div>
         </div>
     </div>
-</div>
+    <!--Конец Текст Секции Частые вопросы-->
 
-<!--Конец Контейнер XXL-->
-<div class="container-xxl">
-    <div class="row justify-content-around">
-        <!--Общий кол на все карты-->
-        <div class="col">
-                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Стандартные</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Премиум</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Просмотры</button>
-                      </li>
-                  </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <!--1 Вкладки с табличками-->
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-                        <!--Выравнивание джастифи на все карточки-->
-                        <div class="row justify-content-between">
-
-                            <!-- Расположение всех карточек-->
-                                <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                                    <!--Первая карточка-->
-                                    <div class="col">
-                                        <div class="card">
-                                          <div class="product-1 align-items-center p-2 text-center">
-                                              <img src="/static/img/follow.svg" alt="" class="rounded" width="160">
-                                              <h5>ПОДПИСЧИКИ</h5>
-                                              <!--Инфо карты-->
-                                              <div class="mt3 info">
-                                                  <div class="star d-flex align-items-start flex-column bd-highlight mb-3">
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Высокое качество</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> 50% из России</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> С аватарками</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Безопасно: без блокировок</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Могут проявлять активность</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Мгновенный запуск заказа</span></li>
-                                                  </div>
-                                                   <div class="cost mt-3 text-dark">
-                                                        <span>0.75₽</span>
-                                                   </div>
-                                              </div>
-                                              <!--Конец информации по карте-->
-                                              <!--Кнопка для карточки-->
-                                              <div class="p-3 shoe text-center text-white mt-3 cursor">
-                                                  <button type="button" class="btn btn-primary superset" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                                                                                  Заказать
-                                                   </button>
-                                              </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                        <!-- Конец Первая карточка-->
+    <!--Начало аккордеона-->
+    <div class="accordion">
+        <div class="container">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="row d-flex justify-content-center">
 
 
-                                        <!--Вторая карточка-->
-                                    <div class="col">
-                                        <div class="card">
-                                          <div class="product-1 align-items-center p-2 text-center">
-                                              <img src="/static/img/follow.svg" alt="" class="rounded" width="160">
-                                              <h5>ПОДПИСЧИКИ</h5>
-                                              <!--Инфо карты-->
-                                              <div class="mt3 info">
-                                                  <div class="star d-flex align-items-start flex-column bd-highlight mb-3">
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Высокое качество</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> 50% из России</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> С аватарками</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Безопасно: без блокировок</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Могут проявлять активность</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Мгновенный запуск заказа</span></li>
-                                                  </div>
-                                                   <div class="cost mt-3 text-dark">
-                                                        <span>0.75₽</span>
-                                                   </div>
-                                              </div>
-                                              <!--Конец информации по карте-->
-                                              <!--Кнопка для карточки-->
-                                              <div class="p-3 shoe text-center text-white mt-3 cursor">
-                                                  <button type="button" class="btn btn-primary superset" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                                                                                  Заказать
-                                                   </button>
-                                              </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                        <!-- Конец Второй карточка-->
-
-
-                                     <!--Третья карточка-->
-                                    <div class="col">
-                                        <div class="card">
-                                          <div class="product-1 align-items-center p-2 text-center">
-                                              <img src="/static/img/follow.svg" alt="" class="rounded" width="160">
-                                              <h5>ПОДПИСЧИКИ</h5>
-                                              <!--Инфо карты-->
-                                              <div class="mt3 info">
-                                                  <div class="star d-flex align-items-start flex-column bd-highlight mb-3">
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Высокое качество</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> 50% из России</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> С аватарками</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Безопасно: без блокировок</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Могут проявлять активность</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Мгновенный запуск заказа</span></li>
-                                                  </div>
-                                                   <div class="cost mt-3 text-dark">
-                                                        <span>0.75₽</span>
-                                                   </div>
-                                              </div>
-                                              <!--Конец информации по карте-->
-                                              <!--Кнопка для карточки-->
-                                              <div class="p-3 shoe text-center text-white mt-3 cursor">
-                                                  <button type="button" class="btn btn-primary superset" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                                                                                  Заказать
-                                                   </button>
-                                              </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                        <!-- Конец третья карточка-->
-
-
-                                    <!--Четвертая карточка-->
-                                    <div class="col">
-                                        <div class="card">
-                                          <div class="product-1 align-items-center p-2 text-center">
-                                              <img src="/static/img/follow.svg" alt="" class="rounded" width="160">
-                                              <h5>ПОДПИСЧИКИ</h5>
-                                              <!--Инфо карты-->
-                                              <div class="mt3 info">
-                                                  <div class="star d-flex align-items-start flex-column bd-highlight mb-3">
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Высокое качество</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> 50% из России</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> С аватарками</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Безопасно: без блокировок</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Могут проявлять активность</span></li>
-                                                      <li><i class="bi bi-check-square"></i><span class="text1"> Мгновенный запуск заказа</span></li>
-                                                  </div>
-                                                   <div class="cost mt-3 text-dark">
-                                                        <span>0.75₽</span>
-                                                   </div>
-                                              </div>
-                                              <!--Конец информации по карте-->
-                                              <!--Кнопка для карточки-->
-                                              <div class="p-3 shoe text-center text-white mt-3 cursor">
-                                                  <button type="button" class="btn btn-primary superset" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                                                                                  Заказать
-                                                   </button>
-                                              </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                        <!-- Конец Четвертая карточка-->
-
-
+                    <div class="col-md-5">
+                          <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                      <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                            Как можно оформить заказ на сайте ?
+                                      </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse hidden" aria-labelledby="panelsStayOpen-headingOne">
+                                      <div class="accordion-body"><h5>
+                                            1. Выберите интересующую вас соцсеть, услугу и качество (стандартное или премиум).<br>
+2. Нажмите кнопку "Заказать", укажите вашу почту и ссылку на страницу.<br>
+3. Перейдите к оплате и произведите ее.<br>
+4. После оплаты вернитесь на сайт.</h5>
+                                      </div>
                                 </div>
-                            <!--Конец Выравнивание джастифи на все карточки-->
-                            </div>
+                          </div>
+                    </div>
 
-                        <!--Конец 1 Вкладки с табличками-->
+
+                    <div class="offset-md-1 col-md-5  accord-2">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Когда начнётся выполнение заказа ?
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                          <div class="accordion-body"><h5>
+                            1. Выберите интересующую вас соцсеть, услугу и качество (стандартное или премиум).<br>
+2. Нажмите кнопку "Заказать", укажите вашу почту и ссылку на страницу.<br>
+3. Перейдите к оплате и произведите ее.<br>
+4. После оплаты вернитесь на сайт.</h5>
+                          </div>
                         </div>
+                      </div>
+                    </div>
+            </div>
 
 
-
-                    <!--2 Вкладка с табличками-->
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div><!--Конец Вкладки с табличками-->
-
-                    <!--3 Вкладка с табличками-->
-                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div><!--Конец Вкладки с табличками-->
-<!--Все названия таюличек таблички-->
-</div>
-
-                    <!--Контейнер на все вкладки с картами-->
-                </div>
-
-        <!--Общий кол на все карты-->
+    <div class="row d-flex justify-content-center colaps2">
+    <div class="col-md-5">
+      <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Какое время выполнения оформленного заказа ?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+        <div class="accordion-body"><h5>
+            1. Выберите интересующую вас соцсеть, услугу и качество (стандартное или премиум).<br>
+2. Нажмите кнопку "Заказать", укажите вашу почту и ссылку на страницу.<br>
+3. Перейдите к оплате и произведите ее.<br>
+4. После оплаты вернитесь на сайт.</h5>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-<!--Конец Контейнер XXL-->
-</div>
-
-
-</section3>
-
-    <section4>
-
-    </section4>
-    <section5>
-
-
-    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Инстаграм СТАНДАРТ</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-          <div class="col">
-
-
-                                <label for="basic-url" class="form-label">Введите ссылку или имя вашего аккаунта</label>
-                                    <div class="input-group mb-3">
-                                      <span class="input-group-text" id="basic-addon1"><a href="#" data-bs-toggle="tooltip" title="Привет Артём тут нужно будет разобраться со стилями чтобы красиво было!"><i class="bi bi-info"></i></a></span>
-                                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-
-                                     </div>
-                                <label for="basic-url" class="form-label" >Введите количество:</label>
-                                    <div class="input-group mb-3">
-                                      <input type="text" class="form-control" placeholder="Например 100" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                    </div>
-
-                                    <label for="basic-url" class="form-label">Итого:</label>
-
-                            </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Оплатить</button>
-      </div>
-      </div>
-
     </div>
   </div>
 </div>
 
+<div class="offset-md-1 col-md-5">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+        Какой есть риск бана для аккаунта ?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+      <div class="accordion-body">
+       <h5> 1. Выберите интересующую вас соцсеть, услугу и качество (стандартное или премиум).<br>
+2. Нажмите кнопку "Заказать", укажите вашу почту и ссылку на страницу.<br>
+3. Перейдите к оплате и произведите ее.<br>
+4. После оплаты вернитесь на сайт.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
 
-    </section5>
+            </div>
+        </div>
+    </div>
+    <!--Конец аккордеона-->
+
+</section>
+
+<!--Карусель начало-->
+<section class="carouselka">
+
+    <div class="text-answers">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-4 col-md-4 d-flex justify-content-center ">
+                    <p class="text-ansers">Остальные Соц.Сети</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Carouselinka">
+        <div class="container">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                  <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 ">
+                                    <div class="card text-center" >
+                                      <div class="card-body">
+                                            <img src="/static/img/insta.png" alt="Гарантия на подписчиков">
+                                            <p class="preimush-cont-text2 " >Instagram</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div class="card text-center" >
+                                      <div class="card-body">
+                                            <img src="/static/img/vk.png" alt="Гарантия на подписчиков">
+                                            <p class="preimush-cont-text2 " >Вконтакте</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div class="card text-center" >
+                                      <div class="card-body">
+                                            <img src="/static/img/YT.png" alt="Гарантия на подписчиков">
+                                            <p class="preimush-cont-text2 " >YouTube</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 ">
+                                    <div class="card text-center" >
+                                      <div class="card-body">
+                                            <img src="/static/img/Telegram_Messenger.png" alt="Гарантия на подписчиков" width="140" height="140">
+                                            <p class="preimush-cont-text2 " >Telegram</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div class="card text-center" >
+                                      <div class="card-body">
+                                            <img src="/static/img/Tik-Tok-Logo-1.png" alt="Гарантия на подписчиков" width="120" height="120">
+                                            <p class="preimush-cont-text2 qwerty1" >TikTok</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div class="card text-center" >
+                                      <div class="card-body">
+                                            <img class="OF-class"  src="/static/img/OF.png" alt="Гарантия на подписчиков" >
+                                            <p class="preimush-cont-text2 qwerty2" >OnlyFans</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!--Карусель конец-->
+
+<section class="podderzhka">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="offset-md-1 col-md-2  d-flex justify-content-end">
+                    <a class="navbar-brand brand1" href="#">FireSoc</a>
+                </div>
+                <div class="col-md-9 d-flex justify-content-around">
+                <ul class="nav ">
+
+                    <li class="nav-item"><a class="nav-item1" href="#">Правила</a></li>
+
+
+                    <li class="nav-item"><a class="nav-item1" href="#">Оферта</a></li>
+
+
+                    <li class="nav-item"><a class="nav-item1" href="#">Конфиденциальность</a></li>
+
+
+                    <li class="nav-item"><a class="nav-item1" href="#">Поддержка</a></li>
+
+                </ul>
+            </div>
+
+
+
+
+            </div>
+        </div>
+
+<!-- Modal Подписчики Эконом-->
+<div class="modal fade" id="exampleModalpodpiskieconom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Заказать Подписчиков</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        <div class="modal-header d-flex justify-content-center modal-header-custom">
+            <h5 class="modal-title segment" id="exampleModalLabel">ЭКОНОМ</h5>
+        </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="offset-md-1">
+                <label for="autoSizingInputGroup">Логин или ссылка на профиль:</label>
+            </div>
+          </div>
+        <div class="row d-flex justify-content-center align-items-center">
+
+          <div class="col-md-10">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="@topaccount">
+                </div>
+
+          </div>
+
+        </div>
+          <div class="row">
+              <div class="offset-md-1">
+                <label for="autoSizingInputGroup">Введите количество подписчиков :</label>
+            </div>
+          </div>
+        <div class="row d-flex justify-content-center align-items-center">
+
+          <div class="col-md-10">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="input_text1" id="input_text1" min="100" max="10000" value="100" onchange="rangeinput1.value = input_text1.value" >
+                </div>
+          </div>
+
+        </div>
+          <div class="row">
+              <div class="offset-md-1 col-md-10">
+                  <input type="range" oninput="input_text1.value = rangeinput1.value" class="form-range custom-range"  min="100" max="10000" value="100" id="rangeinput1" step="100" onchange="input_text1.value = rangeinput1.value" >
+              </div>
+          </div>
+
+
+      </div>
+
+      <div class="modal-footer">
+          <div class="row">
+
+                  <button class="vhod1">Заказать</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Конец Modal Подписчики Эконом-->
+<!-- Modal Подписчики Премиум-->
+<div class="modal fade" id="exampleModalpodpiskipremium" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Заказать Подписчиков</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        <div class="modal-header d-flex justify-content-center modal-header-custom">
+            <h5 class="modal-title segment" id="exampleModalLabel">Премиум</h5>
+        </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="offset-md-1">
+                <label for="autoSizingInputGroup">Логин или ссылка на профиль:</label>
+            </div>
+          </div>
+        <div class="row d-flex justify-content-center align-items-center">
+
+          <div class="col-md-10">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="@topaccount">
+                </div>
+
+          </div>
+
+        </div>
+          <div class="row">
+              <div class="offset-md-1">
+                <label for="autoSizingInputGroup">Введите количество подписчиков :</label>
+            </div>
+          </div>
+        <div class="row d-flex justify-content-center align-items-center">
+
+          <div class="col-md-10">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="input_text2" id="input_text2" min="100" max="10000" value="100" onchange="rangeinput2.value = input_text2.value" >
+                </div>
+          </div>
+
+        </div>
+          <div class="row">
+              <div class="offset-md-1 col-md-10">
+                  <input type="range" oninput="input_text2.value = rangeinput2.value" class="form-range custom-range"  min="100" max="10000" value="100" id="rangeinput2" step="100" onchange="input_text2.value = rangeinput2.value" >
+              </div>
+          </div>
+
+
+      </div>
+
+      <div class="modal-footer">
+          <div class="row">
+
+                  <button class="vhod1">Заказать</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Конец Modal Подписчики Премиум-->
+<!-- Modal Подписчики Стандарт-->
+<div class="modal fade" id="exampleModalpodpiskistandart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Заказать Подписчиков</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        <div class="modal-header d-flex justify-content-center modal-header-custom">
+            <h5 class="modal-title segment" id="exampleModalLabel">Стандарт</h5>
+        </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="offset-md-1">
+                <label for="autoSizingInputGroup">Логин или ссылка на профиль:</label>
+            </div>
+          </div>
+        <div class="row d-flex justify-content-center align-items-center">
+
+          <div class="col-md-10">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="@topaccount">
+                </div>
+
+          </div>
+
+        </div>
+          <div class="row">
+              <div class="offset-md-1">
+                <label for="autoSizingInputGroup">Введите количество подписчиков :</label>
+            </div>
+          </div>
+        <div class="row d-flex justify-content-center align-items-center">
+
+          <div class="col-md-10">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="input_text3" id="input_text3" min="100" max="10000" value="100" onchange="rangeinput3.value = input_text3.value" >
+                </div>
+          </div>
+
+        </div>
+          <div class="row">
+              <div class="offset-md-1 col-md-10">
+                  <input type="range" oninput="input_text3.value = rangeinput3.value" class="form-range custom-range"  min="100" max="10000" value="100" id="rangeinput3" step="100" onchange="input_text3.value = rangeinput3.value" >
+              </div>
+          </div>
+
+
+      </div>
+
+      <div class="modal-footer">
+          <div class="row">
+
+                  <button class="vhod1">Заказать</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Конец Modal Подписчики Премиум-->
+</section>
+
 {% endblock %}
