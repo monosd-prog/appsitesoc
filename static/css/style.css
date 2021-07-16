@@ -76,6 +76,7 @@ line-height: 21px;
 color: white;
 
 }
+
 .btnn:hover{
     text-decoration: none;
     color: white;
@@ -585,6 +586,11 @@ color: #545454;
     backdrop-filter: blur(2px);
     opacity: 1;
 }
+.span2{
+    font-family: Ubuntu;
+    font-style: normal;
+    color: red;
+}
 
 .flipin-text{
     font-weight: 700;
@@ -602,7 +608,7 @@ color: #545454;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
@@ -786,6 +792,62 @@ color: #363636;
 }
 .qwerty2 {
     padding-top: 88px;
+}
+
+}
+@media (max-width: 767.98px) {
+    .div-logo{
+        justify-content:center;
+    }
+    .logo{
+        margin-bottom: 0;
+        margin-right: 2.5%;
+    }
+    .vhod{
+        position: absolute;
+        margin-top: 92px;
+    }
+    .preimushestva{
+    margin-top: -275px;
+    }
+    .hero{
+    visibility:hidden;
+    }
+    .offer-cont{
+    margin: 0 73px;
+    }
+    .card{
+    margin-bottom: 40px;
+    }
+    .accord-row{
+    margin-bottom: -35px;
+    }
+    .accordion-header {
+    margin-bottom: 20px;
+}
+    .carousel-md{
+    flex: 0 0 auto;
+    width: 66.6666666667%;
+    }
+    .nav{
+    justify-content: center;
+    }
+}
+@media (max-width: 575.98px){
+.mb-3 {
+    margin-right: 0;
+}
+}
+@media(max-width: 375.98px){
+.offer-cont-text {
+    font-size: 10px;
+}
+.offer-cont {
+    margin: 10px;
+
+}
+.accordion-button{
+font-size: 19px;
 }
 
 }
